@@ -6,6 +6,7 @@ import heroImage from "../assets/plant-hero.jpg";
 import monsteraImage from "../assets/monstera.jpg";
 import birdImage from "../assets/bird-of-paradise.jpg";
 import snakeImage from "../assets/snake-plant.jpg";
+import lovableMark from "../assets/lovable-mark.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,7 +40,7 @@ function Index() {
       <header className="relative z-20 border-b border-border bg-background/95">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
           <a href="#top" className="flex items-center gap-2 text-2xl font-semibold text-primary" aria-label="Verdant home">
-            <Leaf className="size-6" /> Verdant
+            <img src={lovableMark.url} alt="" aria-hidden="true" className="size-6 object-contain" /> Verdant
           </a>
           <nav className="hidden items-center gap-8 text-sm font-medium md:flex" aria-label="Main navigation">
             <a className="transition-colors hover:text-primary" href="#shop">Shop plants</a>
@@ -110,7 +111,7 @@ function Index() {
 
       <footer id="story" className="bg-primary text-primary-foreground">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-10 px-5 py-14 sm:flex-row lg:px-8">
-          <div><div className="flex items-center gap-2 text-2xl font-semibold"><Leaf className="size-6" /> Verdant</div><p className="mt-4 max-w-sm text-sm leading-6 text-primary-foreground/70">Small-batch plants grown slowly, packed carefully, and delivered ready to thrive.</p></div>
+          <div><div className="flex items-center gap-2 text-2xl font-semibold"><img src={lovableMark.url} alt="" aria-hidden="true" className="size-6 object-contain" /> Verdant</div><p className="mt-4 max-w-sm text-sm leading-6 text-primary-foreground/70">Small-batch plants grown slowly, packed carefully, and delivered ready to thrive.</p></div>
           <div className="grid grid-cols-2 gap-12 text-sm"><div><p className="font-semibold">Visit</p><p className="mt-3 text-primary-foreground/70">142 Greenhouse Lane<br />Portland, OR</p></div><div><p className="font-semibold">Follow</p><p className="mt-3 text-primary-foreground/70">Instagram<br />Pinterest</p></div></div>
         </div>
       </footer>

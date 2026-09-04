@@ -6,6 +6,7 @@ import heroImage from "../assets/plant-hero.jpg";
 import monsteraImage from "../assets/monstera.jpg";
 import birdImage from "../assets/bird-of-paradise.jpg";
 import snakeImage from "../assets/snake-plant.jpg";
+import lovableMark from "../assets/lovable-mark.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({

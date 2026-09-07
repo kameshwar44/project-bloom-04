@@ -34,8 +34,12 @@ function Index() {
 
   return (
     <main className="min-h-screen overflow-hidden bg-background">
-      <div className="bg-primary px-4 py-2.5 text-center text-xs font-semibold uppercase text-primary-foreground">
-        Free delivery on orders over $75
+      <div className="flex items-center justify-center gap-3 bg-accent px-4 py-2.5 text-center text-xs font-semibold uppercase tracking-wide text-accent-foreground">
+        <Sparkles className="size-3.5" aria-hidden="true" />
+        <span>Summer sale ends tonight — 20% off all plants</span>
+        <a href="#shop" className="inline-flex items-center gap-1 underline underline-offset-2 transition-colors hover:opacity-80">
+          Shop now <ArrowRight className="size-3.5" aria-hidden="true" />
+        </a>
       </div>
       <header className="relative z-20 border-b border-border bg-background/95">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
